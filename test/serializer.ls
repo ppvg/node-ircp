@@ -1,17 +1,12 @@
 should = it
 
-serialize = serializer = require modulePath \protocol, \serializer
+serializer = require modulePath \serializer
+serialize = serializer.serialize
 
 describe \serializer, ->
 
   test = (expected, input) ->
     expect (serialize input) .to.eql expected
-
-  should 'be callable as require("serializer")() and require("serialize").serialize()`', ->
-    serializer.should.equal serializer.serialize
-    message = {command:\VERSION}
-    serializer(message).should.eql 'VERSION'
-    serializer.serialize(message).should.eql 'VERSION'
 
   should 'serialize "VERSION"', ->
     test 'VERSION', command: \VERSION

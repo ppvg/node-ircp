@@ -1,10 +1,9 @@
-module.exports = serialize = (message) ->
-  if not message? then throw new Error 'No message to serialize'
-  [ formatPrefix message
-    formatCommand message
-  ].join ''
-
-serialize.serialize = serialize
+module.exports = serializer =
+  serialize: (message) ->
+    if not message? then throw new Error 'No message to serialize'
+    [ formatPrefix message
+      formatCommand message
+    ].join ''
 
 /* Serialize the prefix from either the server or the nick, user and host. */
 function formatPrefix message

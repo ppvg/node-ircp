@@ -1,28 +1,23 @@
 {
-  "name": "ircc",
-  "version": "0.2.2",
-  "description": "Modular IRC library.",
+  "name": "ircp",
+  "version": "1.0.0",
+  "description": "IRC protocol library.",
   "main": "index.js",
   "directories": {
     "test": "test",
     "lib": "lib"
   },
   "dependencies": {},
-  "optionalDependencies": {
-    "dnode": "~1.0.5"
-  },
   "devDependencies": {
     "LiveScript": "~1.1.1",
     "mocha": "~1.12.0",
     "chai": "~1.7.2",
-    "sinon-chai": "~2.4.0",
     "gaze": "~0.4.1",
-    "mockery": "~1.4.0",
     "coverage-badge": "0.0.5",
     "q": "~0.9.6"
   },
   "engines": {
-    "node": ">=0.9.8"
+    "node": ">=0.8.0"
   },
   "scripts": {
     "build": "slake build",
@@ -32,15 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PPvG/node-ircc"
+    "url": "https://github.com/PPvG/node-ircp"
   },
   "keywords": [
     "irc",
     "chat",
-    "streams",
-    "sockets",
-    "network",
-    "modular",
+    "protocol",
     "LiveScript"
   ],
   "author": "Peter-Paul van Gemerden <info@ppvg.nl>",

@@ -1,6 +1,7 @@
 should = it
 
-parse = parser = require modulePath \protocol, \parser
+parser = require modulePath \parser
+parse = parser.parse
 
 describe \parser, ->
 

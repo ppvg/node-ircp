@@ -1,10 +1,9 @@
 require! \./regex
 require! \./codes
 
-module.exports = parse = (line) ->
-  line |> split |> parsePrefix |> parseCommand |> parseParameters
-
-parse.parse = parse
+module.exports = parser =
+  parse: (line) ->
+    line |> split |> parsePrefix |> parseCommand |> parseParameters
 
 function split line
   if m = line.match regex.split

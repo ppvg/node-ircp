@@ -2,7 +2,7 @@ global.path = require('path');
 global.chai = require('chai');
 global.expect = chai.expect;
 chai.should()
-global.libPath = process.env.IRCC_COV
+global.libPath = process.env.IRCP_COV
   ? path.join(__dirname, '..', 'lib-cov')
   : path.join(__dirname, '..', 'lib');
 global.modulePath = function() {

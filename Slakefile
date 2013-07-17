@@ -21,7 +21,7 @@ task \watch 'Watch, compile and test files.' ->
   invoke \test
 
 task \coverage 'Generate code coverage report and badge using jscoverage' ->
-  process.env.\IRCC_COV = 1
+  process.env.\IRCP_COV = 1
   jscoverage!
     .then ->
       file = fs.openSync \coverage.html, \w
